@@ -1,0 +1,21 @@
+name: 'Send Result to PlatformWorks'
+description: 'Posts the result of a GitHub Actions workflow back to a callback URL.'
+author: 'PlatformWorks'
+
+inputs:
+  status:
+    description: 'Result status (e.g., SUCCESS or FAILURE)'
+    required: true
+  summary:
+    description: 'Human-readable summary'
+    required: true
+  result:
+    description: 'Result payload as string'
+    required: true
+  callback_url:
+    description: 'PlatformWorks callback URL'
+    required: true
+
+runs:
+  using: 'node20'
+  main: "dist/index.js"

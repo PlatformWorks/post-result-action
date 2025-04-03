@@ -1,0 +1,34 @@
+# Node dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Build output
+lib/
+out/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Local env files
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore everything in dist
+dist/*
+# But don't ignore these files
+!dist/index.js
+!dist/*.js
